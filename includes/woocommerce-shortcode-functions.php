@@ -16,7 +16,7 @@ function buy_now_button_shortcode() {
     global $product;
     $product_id = $product->get_id();
     $button_html = '<form class="cart" method="post" enctype="multipart/form-data">
-        <button type="submit" name="buy-now" value="' . $product_id . '">Buy Now</button>
+        <button class="button primary is-bevel expand" type="submit" name="buy-now" value="' . $product_id . '">Buy Now</button>
         </form>';
     return $button_html;
 }
