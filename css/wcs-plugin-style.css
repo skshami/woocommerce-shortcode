@@ -1,0 +1,42 @@
+.logo a {
+    font-size: 20px;
+    text-transform: none;
+	  color: #4ad8ff;
+}
+
+.absolute-footer {
+    display: none;
+}
+
+.has-dropdown .icon-angle-down {
+    display: none;
+}
+a.add_to_wishlist.single_add_to_wishlist.button.alt, a.delete_item.button.alt{
+    background-color: #008CB2;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+div#yith-wcwl-popup-message {
+    visibility: hidden;
+}
+button.single_add_to_cart_button.button.primary.is-bevel.expand.alt {
+    background-color: #008CB2;
+    border-radius: 5px;
+}
+button.button.primary.is-bevel.expand {
+    border-radius: 5px;
+}
+button.single_add_to_cart_button.button.alt.wp-element-button{
+	 background-color: #008CB2;
+   border-radius: 5px;
+	 width:100%
+}
+.quantity.buttons_added.form-normal {
+    display: none;
+}
+span.separator {
+    display: none;
+}
+a.view-wishlist {
+    display: none;
+}
