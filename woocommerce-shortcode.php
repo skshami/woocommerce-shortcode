@@ -19,6 +19,12 @@ define( 'WCS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 // Include necessary files
 include_once( WCS_PLUGIN_DIR . 'includes/woocommerce-shortcode-functions.php' );
 
+// Enqueue stylesheet
+add_action( 'wp_enqueue_scripts', 'wcs_enqueue_styles', 999 );
+function wcs_enqueue_styles() {
+    wp_enqueue_style( 'wcs-plugin-style', WCS_PLUGIN_URL . 'css/wcs-plugin-style.css', array(), '1.0.0', 'all' );
+}
+
 // Register activation hook
 register_activation_hook( __FILE__, 'wcs_activate' );
 
